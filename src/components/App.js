@@ -1,9 +1,11 @@
 import React from "react";
+import Header from "./Header";
 
 function App() {
   return (
     <React.Fragment>
-      <h1>Where We Droppin'?</h1>
+      <Header />
+      <p><em>Firebase entries not saving!</em></p>
       <hr/>
     </React.Fragment>
   );
