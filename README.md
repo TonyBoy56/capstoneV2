@@ -1,4 +1,73 @@
+# Where We Droppin'?
+
+## Description
+### _This is an application that allows users to create their own profiles and view their own, or other user's game data pulled from the Call of Duty Modern Warfare API._
+
+## Time-log
+### 7/24/20
+* 8-10: Spent some time to look over alternative project ideas. Considering changing project towards a messaging app and may utilize tutorial to do so. 
+https://www.youtube.com/watch?v=jFNHerJqvFw
+* 10:30-12: Time spent adding code in reference to previous projects to capstone project.
+* 1:30-3: Troubleshooting complier errors being received in the console.
+* 4-5: Reconsidering new MVP approach.
+
+### 7/27/20
+* 8-10: Scrap old repo, create new project repository for fresh start in API calls
+*
+
+## User Stories:
+
+| Component | Story |
+|---|---|
+| User Profile| Users can make an account with sign in/sign out functionality |
+| Data Retrieval | Users can retrieve their CoD profile data by linking their Activision account with their user profile|
+| View Data of Peers | Users can review other's profiles to reference and compare data to their own |
+| Pin to Map | Users can view and add pins to the Battle Royal map |
+| Add a Friend| Users can find new players to add as friends |
+| Create Squads | Users can add friends to a squad |
+|||  
+
+## Project Stretch Goals
+
+| Component | Story |
+|---|---|
+| Squad Messaging | Users can live message one another within their respective squads. |
+| Meetup Alerts | Users can setup alerts to notify squad members of proposed meet-times. |
+
+## Installation Instructions
+
+1. Visit this link https://github.com/assassin56/capstone
+ 
+2. Clone this repo by selecting the "clone or download" button. This will allow you to copy the repo's link.
+
+3. While on the command line in your terminal, enter "git clone" followed by the copied url.
+
+4. Enter "ls" to show a list of files and documents. One of them will be labeled "capstone". Use "cd" followed by the project directory name to navigate there.
+
+5. While in project directory, run the command "npm install"
+
+6. While in project directory, run "npm run build"
+
+7. While in project directory, run "npm start"
+
+8. Type in your browser the url "localhost:3000" to access the page, or the page should load upon running the previous command.
+
+## Known Bugs
+* _N/A_
+
+## Technologies Used
+
+* Node.js
+* Webpack
+* npm
+* Javascript
+* jQuery
+* React
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Diagrams
+![Component Map](./diags/wireframe1.png)
 
 ## Available Scripts
 
@@ -60,6 +129,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/ma
 This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
 ### Deployment
+
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
