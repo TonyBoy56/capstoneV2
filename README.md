@@ -19,18 +19,19 @@ https://www.youtube.com/watch?v=jFNHerJqvFw
 
 | Component | Story |
 |---|---|
-| User Profile| Users can make an account with sign in/sign out functionality |
-| Data Retrieval | Users can retrieve their CoD profile data by linking their Activision account with their user profile|
-| View Data of Peers | Users can review other's profiles to reference and compare data to their own |
-| Pin to Map | Users can view and add pins to the Battle Royal map |
-| Add a Friend| Users can find new players to add as friends |
-| Create Squads | Users can add friends to a squad |
+| User Profile| Existing users can signin to their Activision Accounts |
+| User Profile| New users can create an Activision Account |
+| Data Retrieval | Users can retrieve their CoD profile data by linking their Activision account with their user profile. |
+| View Data of Peers | Users can review other's profiles to reference. |
 |||  
 
 ## Project Stretch Goals
 
 | Component | Story |
 |---|---|
+| Pin to Map | Users can view and add pins to the Battle Royal map |
+| Add a Friend| Users can find new players to add as friends |
+| Create Squads | Users can add friends to a squad |
 | Squad Messaging | Users can live message one another within their respective squads. |
 | Meetup Alerts | Users can setup alerts to notify squad members of proposed meet-times. |
 
