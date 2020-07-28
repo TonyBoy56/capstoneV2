@@ -14,11 +14,11 @@ export const getLoginSuccess = () => ({
   login
 });
 
-export const makeApiCallLogin = () => {
-  return dispatch => {
-    dispatch(requestLogin);
-    return (
-      fetch
-    );
-  }
-}
+// export const makeApiCallLogin = () => {
+//   return dispatch => {
+//     dispatch(requestLogin);
+//     return (
+//       // fetch(API HERE)
+//     );
+//   }
+// }
