@@ -14,11 +14,22 @@ export const getLoginSuccess = () => ({
   login
 });
 
-// export const makeApiCallLogin = () => {
-//   return dispatch => {
-//     dispatch(requestLogin);
-//     return (
-//       // fetch(API HERE)
-//     );
-//   }
-// }
+API.login("<email>", "<password>").then(<?>).catch(<?>);
+
+
+
+export const makeApiCallLogin = () => {
+  const API = require('call-of-duty-api')({ 
+    platform: 'psn', 
+    ratelimit: { 
+      maxRequests: 2, 
+      perMilliseconds: 1000, 
+      maxRPS: 2 }
+    });
+  return dispatch => {
+    dispatch(requestLogin);
+    return (
+      // fetch(API HERE)
+    );
+  }
+}
