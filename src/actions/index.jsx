@@ -26,10 +26,11 @@ export const makeApiCallLogin = () => {
       perMilliseconds: 1000, 
       maxRPS: 2 }
     });
-  return dispatch => {
-    dispatch(requestLogin);
-    return (
-      // fetch(API HERE)
-    );
-  }
+    console.log(API);
+  // return dispatch => {
+  //   dispatch(requestLogin);
+  //   return (
+  //     fetch(API HERE)
+  //   );
+  // }
 }
