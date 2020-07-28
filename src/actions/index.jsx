@@ -14,7 +14,7 @@ export const getLoginSuccess = () => ({
   login
 });
 
-API.login("<email>", "<password>").then(<?>).catch(<?>);
+// API.login("<email>", "<password>").then(<?>).catch(<?>);
 
 
 
