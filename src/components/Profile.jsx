@@ -10,10 +10,6 @@ class Profiles extends React.Component {
     }
   }
 
-  makeApiCall = () => {
-    fetch 
-  }
-
   render() {
 
   }
