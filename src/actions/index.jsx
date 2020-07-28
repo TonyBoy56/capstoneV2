@@ -29,7 +29,6 @@ export const makeApiCallLogin = () => {
       perMilliseconds: 1000, 
       maxRPS: 2 }
     });
-    console.log(API);
   return dispatch => {
     dispatch(requestLogin);
     return fetch(API)
@@ -42,5 +41,4 @@ export const makeApiCallLogin = () => {
       });
   }
 }
-console.log(fetch(API));
 
