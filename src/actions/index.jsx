@@ -17,19 +17,23 @@ export const getLoginSuccess = () => ({
 // API.login("<email>", "<password>").then(<?>).catch(<?>);
 
 
+const API = require('call-of-duty-api')();
+console.log(API);
 
-export const makeApiCallLogin = () => {
-  const API = require('call-of-duty-api')({ 
-    platform: 'psn', 
-    ratelimit: { 
-      maxRequests: 2, 
-      perMilliseconds: 1000, 
-      maxRPS: 2 }
-    });
-    console.log(API);
-  return dispatch => {
-    dispatch(requestLogin);
-    return fetch(API);
-  }
-}
-console.log(fetch(API));
+
+// export const makeApiCallLogin = () => {
+//   const API = require('call-of-duty-api')({ 
+//     platform: 'psn', 
+//     ratelimit: { 
+//       maxRequests: 2, 
+//       perMilliseconds: 1000, 
+//       maxRPS: 2 }
+//     });
+//     console.log(API);
+//   return dispatch => {
+//     dispatch(requestLogin);
+//     return fetch(API);
+//   }
+// }
+// console.log(fetch(API));
+
