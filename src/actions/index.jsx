@@ -1,6 +1,6 @@
 import * as c from './ActionsTypes';
-import axios from 'axios'
-import rateLimit from 'axios-rate-limit';
+// import axios from 'axios'
+// import rateLimit from 'axios-rate-limit';
 
 export const requestLogin = () => ({
   type: c.REQUEST_LOGIN
@@ -8,12 +8,10 @@ export const requestLogin = () => ({
 
 export const getLoginFailure = () => ({
   type: c.GET_LOGIN_FAILURE,
-  error
 });
 
 export const getLoginSuccess = () => ({
   type: c.GET_LOGIN_SUCCESS,
-  login
 });
 
 // API.login("<email>", "<password>").then(<?>).catch(<?>);

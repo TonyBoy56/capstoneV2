@@ -4,9 +4,9 @@ import makeApiCallLogin from '../actions/index';
 function SignIn() {
   function doSignIn(event) {
     event.preventDefault();
-    const email = event.target.email.value;
-    const password = event.target.password.value;
-    makeApiCallLogin.API.login(email, password)
+    const signInEmail = event.target.signInEmail.value;
+    const signInPassword = event.target.signInPassword.value;
+    makeApiCallLogin.API.login(signInEmail, signInPassword)
   }
 
   return (
