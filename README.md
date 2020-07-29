@@ -13,7 +13,15 @@ https://www.youtube.com/watch?v=jFNHerJqvFw
 
 ### 7/27/20
 * 8-10: Scrap old repo, create new project repository for fresh start in API calls
-*
+
+### 7/28/20
+* 8-9:30: Project setup on new machine
+* 10-12: TroubleShooting Compling errors, begin set up for hitting API requests.
+* 1-2: Setting up signin form to take username and password. 
+* 2-5:30: Encountering errors in console.log(API) placement. Making attempts to view data in the browsers DevTools
+
+### 7/29/20
+* 8-9:50: Encountering account linking issues with Activision and Playstation network. Searching for alternative accounts to present data
 
 ## User Stories:
 
