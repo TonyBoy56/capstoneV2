@@ -22,7 +22,7 @@ https://www.youtube.com/watch?v=jFNHerJqvFw
 
 ### 7/29/20
 * 8-9:50: Encountering account linking issues with Activision and Playstation network. Searching for alternative accounts to present data. https://www.callofduty.com/
-
+* 10:00: Retrieve another account to hit endpoints of the call-of-duty-api with.
 ## User Stories:
 
 | Component | Story |
