@@ -1,4 +1,6 @@
 import * as c from './ActionsTypes';
+import axios from 'axios'
+import rateLimit from 'axios-rate-limit';
 
 export const requestLogin = () => ({
   type: c.REQUEST_LOGIN
@@ -21,10 +23,10 @@ export const getLoginSuccess = () => ({
 // console.log(API);
 
 
-export const makeApiCallLogin = () => {
+const makeApiCallLogin = () => {
   const API = require('call-of-duty-api')({ 
     platform: 'psn', 
-    ratelimit: { 
+    rateLimit: { 
       maxRequests: 2, 
       perMilliseconds: 1000, 
       maxRPS: 2 }
@@ -41,4 +43,6 @@ export const makeApiCallLogin = () => {
       });
   }
 }
+
+export default makeApiCallLogin;
 
