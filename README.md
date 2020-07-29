@@ -21,7 +21,7 @@ https://www.youtube.com/watch?v=jFNHerJqvFw
 * 2-5:30: Encountering errors in console.log(API) placement. Making attempts to view data in the browsers DevTools
 
 ### 7/29/20
-* 8-9:50: Encountering account linking issues with Activision and Playstation network. Searching for alternative accounts to present data
+* 8-9:50: Encountering account linking issues with Activision and Playstation network. Searching for alternative accounts to present data. https://www.callofduty.com/
 
 ## User Stories:
 
