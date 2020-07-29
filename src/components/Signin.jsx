@@ -1,12 +1,14 @@
 import React from "react";
 import makeApiCallLogin from '../actions/index';
+import { connect } from 'react-redux';
 
 function SignIn() {
   function doSignIn(event) {
     event.preventDefault();
     const signInEmail = event.target.signInEmail.value;
     const signInPassword = event.target.signInPassword.value;
-    makeApiCallLogin.API.login(signInEmail, signInPassword)
+    makeApiCallLogin(signInEmail, signInPassword)
+    console.log(makeApiCallLogin())
   }
 
   return (

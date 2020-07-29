@@ -21,17 +21,17 @@ export const getLoginSuccess = () => ({
 // console.log(API);
 
 
-const makeApiCallLogin = () => {
+const makeApiCallLogin = (signInEmail, signInPassword) => {
   const API = require('call-of-duty-api')({ 
-    platform: 'psn', 
-    rateLimit: { 
-      maxRequests: 2, 
-      perMilliseconds: 1000, 
-      maxRPS: 2 }
+    // platform: 'psn', 
+    // rateLimit: { 
+    //   maxRequests: 2, 
+    //   perMilliseconds: 1000, 
+    //   maxRPS: 2 }
     });
   return dispatch => {
     dispatch(requestLogin);
-    return fetch(API)
+    return fetch(API.login(signInEmail, signInPassword))
       .then(response => response.json())
       .then(jsonifiedReponse => {
         dispatch(getLoginSuccess(jsonifiedReponse.results));
@@ -39,7 +39,7 @@ const makeApiCallLogin = () => {
       .catch((error) => {
         dispatch(getLoginFailure(error));
       });
-  }
+    }
 }
 
 export default makeApiCallLogin;
