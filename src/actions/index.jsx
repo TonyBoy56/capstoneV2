@@ -1,4 +1,5 @@
 import * as c from './ActionsTypes';
+const API = require('call-of-duty-api')();
 // import axios from 'axios'
 // import rateLimit from 'axios-rate-limit';
 
@@ -23,11 +24,15 @@ export const getLoginSuccess = (profiles) => ({
 // console.log(API);
 
 
-const makeApiCallLogin = (signInEmail, signInPassword) => {
-  const API = require('call-of-duty-api')();
-  API.login(signInEmail, signInPassword)
-  .then(response => response.json())
-  .then(data => console.log(data));
+const makeApiCallLogin = async (signInEmail, signInPassword) => {
+  const loggedIn = await API.login(signInEmail, signInPassword)
+  .then(() => {
+    return "It worked! You're Logged In!";
+  })
+  .catch((error) => {
+    return error;
+  });
+  return loggedIn
   // return dispatch => {
   //   dispatch(requestLogin);
   //   return fetch(API.login(signInEmail, signInPassword))
