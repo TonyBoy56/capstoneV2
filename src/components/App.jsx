@@ -1,11 +1,12 @@
 import React from "react";
 import Header from "./Header";
+import SignIn from "./SignIn";
 
 function App() {
   return (
     <React.Fragment>
       <Header />
-      <p><em>Firebase entries not saving!</em></p>
+      <SignIn />
       <hr/>
     </React.Fragment>
   );
