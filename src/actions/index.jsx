@@ -6,12 +6,14 @@ export const requestLogin = () => ({
   type: c.REQUEST_LOGIN
 });
 
-export const getLoginFailure = () => ({
+export const getLoginFailure = (error) => ({
   type: c.GET_LOGIN_FAILURE,
+  error
 });
 
-export const getLoginSuccess = () => ({
+export const getLoginSuccess = (profiles) => ({
   type: c.GET_LOGIN_SUCCESS,
+  profiles
 });
 
 // API.login("<email>", "<password>").then(<?>).catch(<?>);
@@ -22,24 +24,26 @@ export const getLoginSuccess = () => ({
 
 
 const makeApiCallLogin = (signInEmail, signInPassword) => {
-  const API = require('call-of-duty-api')({ 
-    // platform: 'psn', 
-    // rateLimit: { 
-    //   maxRequests: 2, 
-    //   perMilliseconds: 1000, 
-    //   maxRPS: 2 }
+  const API = require('call-of-duty-api')();
+  // return dispatch => {
+  //   dispatch(requestLogin);
+  //   return fetch(API.login(signInEmail, signInPassword))
+  //     .then(response => response.json())
+  //     .then(jsonifiedReponse => {
+  //       dispatch(getLoginSuccess(jsonifiedReponse.results));
+  //     })
+  //     .catch((error) => {
+  //       dispatch(getLoginFailure(error));
+  //     });
+  //   }
+  fetch(API.login(signInEmail, signInPassword))
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+    })
+    .catch((error) => {
+      console.error('Nope:', error);
     });
-  return dispatch => {
-    dispatch(requestLogin);
-    return fetch(API.login(signInEmail, signInPassword))
-      .then(response => response.json())
-      .then(jsonifiedReponse => {
-        dispatch(getLoginSuccess(jsonifiedReponse.results));
-      })
-      .catch((error) => {
-        dispatch(getLoginFailure(error));
-      });
-    }
 }
 
 export default makeApiCallLogin;

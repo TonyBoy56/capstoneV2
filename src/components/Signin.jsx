@@ -8,7 +8,7 @@ function SignIn() {
     const signInEmail = event.target.signInEmail.value;
     const signInPassword = event.target.signInPassword.value;
     makeApiCallLogin(signInEmail, signInPassword)
-    console.log(makeApiCallLogin())
+    // console.log(makeApiCallLogin);
   }
 
   return (

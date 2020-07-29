@@ -31,9 +31,9 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-store.subscribe(() => 
-  console.log(store.getState)
-);
+// store.subscribe(() => 
+//   console.log(store.getState)
+// );
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
