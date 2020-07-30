@@ -2,7 +2,8 @@ import React from "react";
 
 function Header() {
   return (
-    <h1>Where We Dropping'?</h1>
+    <h1>Call Of Duty: Modern Warfare Stat Finder
+    </h1>
   );
 }
 
