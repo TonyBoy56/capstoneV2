@@ -28,8 +28,8 @@ export const getLoginSuccess = (profiles) => ({
   profiles
 });
 
-const makeApiCallSearch = async (searchQuery) => {
-  var req = unirest("GET", `https://call-of-duty-modern-warfare.p.rapidapi.com/multiplayer/${searchQuery}/psn`);
+const makeApiCallSearch = async (searchQuery, platform) => {
+  var req = unirest("GET", `https://call-of-duty-modern-warfare.p.rapidapi.com/multiplayer/${searchQuery}/${platform}`);
 
 req.headers({
 	"x-rapidapi-host": "call-of-duty-modern-warfare.p.rapidapi.com",
