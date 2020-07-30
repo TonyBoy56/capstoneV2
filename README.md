@@ -1,7 +1,7 @@
 # CoD: Modern Warfare Stat Finder
 
 ## Description
-### _This is an application that allows users to create their own profiles and view their own, or other user's game data pulled from the Call of Duty Modern Warfare API._
+### _This is an application with larg ambitions to allow users to create their own profiles and view their own, or other user's game data pulled from the Call of Duty Modern Warfare API._
 
 ## Time-log
 ### 7/24/20 _from the previous repo_
