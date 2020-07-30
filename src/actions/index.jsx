@@ -10,19 +10,7 @@ var unirest = require("unirest");
 
 
 
-var req = unirest("GET", "https://call-of-duty-modern-warfare.p.rapidapi.com/multiplayer/assassin56--_/psn");
 
-req.headers({
-	"x-rapidapi-host": "call-of-duty-modern-warfare.p.rapidapi.com",
-	"x-rapidapi-key": process.env.REACT_APP_COD_API_KEY,
-	"useQueryString": true
-});
-
-req.end(function (res) {
-	if (res.error) throw new Error(res.error);
-
-	console.log(res.body);
-});
 
 
 
@@ -40,8 +28,21 @@ export const getLoginSuccess = (profiles) => ({
   profiles
 });
 
-const makeApiCallLogin = async (signInEmail, signInPassword) => {
+const makeApiCallSearch = async (searchQuery) => {
+  var req = unirest("GET", `https://call-of-duty-modern-warfare.p.rapidapi.com/multiplayer/${searchQuery}/psn`);
+
+req.headers({
+	"x-rapidapi-host": "call-of-duty-modern-warfare.p.rapidapi.com",
+	"x-rapidapi-key": process.env.REACT_APP_COD_API_KEY,
+	"useQueryString": true
+});
+
+req.end(function (res) {
+	if (res.error) throw new Error(res.error);
+
+	console.log(res.body);
+});
 }
 
-export default makeApiCallLogin;
+export default makeApiCallSearch;
 

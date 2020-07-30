@@ -1,13 +1,12 @@
 import React from "react";
-import makeApiCallLogin from '../actions/index';
+import makeApiCallSearch from '../actions/index';
 // import { connect } from 'react-redux';
 
 function Search() {
   function executeSearchQuery(event) {
     event.preventDefault();
     const searchQuery = event.target.searchQuery.value;
-    makeApiCallLogin()
-    // console.log(makeApiCallLogin);
+    makeApiCallSearch(searchQuery);
   }
 
   return (
