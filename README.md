@@ -77,6 +77,12 @@ https://www.youtube.com/watch?v=jFNHerJqvFw
 * npm
 * Javascript
 * React
+* Firebase
+* Firestore
+* Redux
+* NPM
+* unirest (provided by RapidApi)
+* call-of-duty-api
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
