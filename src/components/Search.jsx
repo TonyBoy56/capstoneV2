@@ -5,8 +5,9 @@ import makeApiCallSearch from '../actions/index';
 function Search() {
   function executeSearchQuery(event) {
     event.preventDefault();
-    const searchQuery = event.target.searchQuery.value;
-    makeApiCallSearch(searchQuery);
+    const userName = event.target.userName.value;
+    const platform = event.target.platform.value;
+    makeApiCallSearch(userName, platform);
   }
 
   return (
@@ -14,8 +15,12 @@ function Search() {
       <form onSubmit = {executeSearchQuery}>
         <input
           type = 'text'
-          name = 'searchQuery'
+          name = 'userName'
           placeholder = 'Player Search' />
+        <input
+          type = 'text'
+          name = 'platform'
+          placeholder = 'Platform Search' />
         <button type = 'submit'>Search</button>
       </form>
     </React.Fragment>
