@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "./Header";
-import SignIn from "./Signin";
+import Search from "./Search";
 
 function App() {
   return (
     <React.Fragment>
       <Header />
-      <SignIn />
+      <Search />
       <hr/>
     </React.Fragment>
   );
