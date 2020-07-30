@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+// import React, { Component } from 'react';s
 import * as c from './ActionsTypes';
+// import axios from 'axios'
+// import rateLimit from 'axios-rate-limit';
 // const API = require('call-of-duty-api')();
 var unirest = require("unirest");
 
-// import axios from 'axios'
-// import rateLimit from 'axios-rate-limit';
 
 export const requestLogin = () => ({
   type: c.REQUEST_LOGIN
@@ -31,7 +31,6 @@ const makeApiCallSearch = async (userName, platform) => {
 
   req.end(function (res) {
     if (res.error) throw new Error(res.error);
-
     console.log(res.body);
   });
 }
