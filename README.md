@@ -1,4 +1,4 @@
-# Where We Droppin'?
+# CoD: Modern Warfare Stat Finder
 
 ## Description
 ### _This is an application that allows users to create their own profiles and view their own, or other user's game data pulled from the Call of Duty Modern Warfare API._
@@ -32,8 +32,6 @@ https://www.youtube.com/watch?v=jFNHerJqvFw
 
 | Component | Story |
 |---|---|
-| User Profile| Existing users can signin to their Activision Accounts |
-| User Profile| New users can create an Activision Account |
 | Data Retrieval | Users can retrieve their CoD profile data by linking their Activision account with their user profile. |
 | View Data of Peers | Users can review other's profiles to reference. |
 |||  
@@ -42,6 +40,8 @@ https://www.youtube.com/watch?v=jFNHerJqvFw
 
 | Component | Story |
 |---|---|
+| User Profile| Existing users can signin to their Activision Accounts |
+| User Profile| New users can create an Activision Account |
 | Pin to Map | Users can view and add pins to the Battle Royal map |
 | Add a Friend| Users can find new players to add as friends |
 | Create Squads | Users can add friends to a squad |
