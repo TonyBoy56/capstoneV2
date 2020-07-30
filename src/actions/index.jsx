@@ -1,3 +1,4 @@
+import React, { Component } from 'react';
 import * as c from './ActionsTypes';
 // const API = require('call-of-duty-api')();
 var unirest = require("unirest");
@@ -13,7 +14,7 @@ var req = unirest("GET", "https://call-of-duty-modern-warfare.p.rapidapi.com/mul
 
 req.headers({
 	"x-rapidapi-host": "call-of-duty-modern-warfare.p.rapidapi.com",
-	"x-rapidapi-key": "",
+	"x-rapidapi-key": process.env.REACT_APP_COD_API_KEY,
 	"useQueryString": true
 });
 
