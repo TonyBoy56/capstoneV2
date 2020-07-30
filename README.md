@@ -4,7 +4,7 @@
 ### _This is an application that allows users to create their own profiles and view their own, or other user's game data pulled from the Call of Duty Modern Warfare API._
 
 ## Time-log
-### 7/24/20
+### 7/24/20 _from the previous repo_
 * 8-10: Spent some time to look over alternative project ideas. Considering changing project towards a messaging app and may utilize tutorial to do so. 
 https://www.youtube.com/watch?v=jFNHerJqvFw
 * 10:30-12: Time spent adding code in reference to previous projects to capstone project.
@@ -20,14 +20,15 @@ https://www.youtube.com/watch?v=jFNHerJqvFw
 * 1-2: Setting up signin form to take username and password. 
 * 2-5:30: Encountering errors in console.log(API) placement. Making attempts to view data in the browsers DevTools
 
-### 7/29/20
+### 7/29/20 
 * 8-9:50: Encountering account linking issues with Activision and Playstation network. Searching for alternative accounts to present data. https://www.callofduty.com/
 * 10:00: Retrieve another account to hit endpoints of the call-of-duty-api with.
 * 10-12: Now Receiving a Promise. Making efforts to fetch the object. Encountering two errors in the console reading 'Refused to set unsafe header "Cookie"', and 'xhr.js:123 Refused to set unsafe header "Connection"'.
 * 1:30-4:15: Making attempts to isolate and review other individuals work with the same api in handling this request.
-* 9:30-10:23pm: Utilizing rapidApi's Modern Warfare public api. Able to recieve endpoints from the browswer, although not within postman. Testing further.
-* 10:23-
-
+* 9:30-10:23pm: Utilizing rapidApi's Modern Warfare public api. Able to recieve endpoints from the browser, although not within postman. Testing further.
+* 10:23-2:06am, 7/30/20: Time was spent refactoring the API call to display user data. I ditched the API I was using, intially requiring user authentication to display information. Information can now be searched by inputting a username and associated platform to the new Search() method.
+### Points of Interest to Pursue
+* Display the user's data to the page
 ## User Stories:
 
 | Component | Story |

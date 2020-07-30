@@ -6,14 +6,6 @@ var unirest = require("unirest");
 // import axios from 'axios'
 // import rateLimit from 'axios-rate-limit';
 
-// Maybe this will work (below) //
-
-
-
-
-
-
-
 export const requestLogin = () => ({
   type: c.REQUEST_LOGIN
 });
