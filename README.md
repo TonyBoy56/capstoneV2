@@ -51,7 +51,7 @@ https://www.youtube.com/watch?v=jFNHerJqvFw
 
 ## Installation Instructions
 
-1. Visit this link https://github.com/assassin56/capstone
+1. Visit this link https://github.com/assassin56/capstoneV2
  
 2. Clone this repo by selecting the "clone or download" button. This will allow you to copy the repo's link.
 
@@ -61,14 +61,14 @@ https://www.youtube.com/watch?v=jFNHerJqvFw
 
 5. While in project directory, run the command "npm install"
 
-6. While in project directory, run "npm run build"
+6. While in project directory, run "npm start"
 
-7. While in project directory, run "npm start"
+7. Type in your browser the url "localhost:3000" to access the page, or the page should load upon running the previous command.
 
-8. Type in your browser the url "localhost:3000" to access the page, or the page should load upon running the previous command.
+8. To view data being requested from the api, open the browser console with CMD+SHIFT+J (CONTROL+SHIFT+I, for windows).
 
 ## Known Bugs
-* _N/A_
+* _When searching for users consisting of a '#' in their name, typcically associated to battle.net or Activision (uno) ID platoforms, a parsing error occurs. The application is only able to make search queries on console users at the moment._
 
 ## Technologies Used
 
@@ -76,7 +76,6 @@ https://www.youtube.com/watch?v=jFNHerJqvFw
 * Webpack
 * npm
 * Javascript
-* jQuery
 * React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
