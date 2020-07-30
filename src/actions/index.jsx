@@ -17,13 +17,6 @@ export const getLoginSuccess = (profiles) => ({
   profiles
 });
 
-// API.login("<email>", "<password>").then(<?>).catch(<?>);
-
-
-// const API = require('call-of-duty-api')();
-// console.log(API);
-
-
 const makeApiCallLogin = async (signInEmail, signInPassword) => {
   const loggedIn = await API.login(signInEmail, signInPassword)
   .then(() => {
@@ -33,17 +26,6 @@ const makeApiCallLogin = async (signInEmail, signInPassword) => {
     return error;
   });
   return loggedIn
-  // return dispatch => {
-  //   dispatch(requestLogin);
-  //   return fetch(API.login(signInEmail, signInPassword))
-  //     .then(response => response.json())
-  //     .then(jsonifiedReponse => {
-  //       dispatch(getLoginSuccess(jsonifiedReponse.results));
-  //     })
-  //     .catch((error) => {
-  //       dispatch(getLoginFailure(error));
-  //     });
-  //   }
 }
 
 export default makeApiCallLogin;
