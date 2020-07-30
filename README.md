@@ -23,6 +23,11 @@ https://www.youtube.com/watch?v=jFNHerJqvFw
 ### 7/29/20
 * 8-9:50: Encountering account linking issues with Activision and Playstation network. Searching for alternative accounts to present data. https://www.callofduty.com/
 * 10:00: Retrieve another account to hit endpoints of the call-of-duty-api with.
+* 10-12: Now Receiving a Promise. Making efforts to fetch the object. Encountering two errors in the console reading 'Refused to set unsafe header "Cookie"', and 'xhr.js:123 Refused to set unsafe header "Connection"'.
+* 1:30-4:15: Making attempts to isolate and review other individuals work with the same api in handling this request.
+* 9:30-10:23pm: Utilizing rapidApi's Modern Warfare public api. Able to recieve endpoints from the browswer, although not within postman. Testing further.
+* 10:23-
+
 ## User Stories:
 
 | Component | Story |
