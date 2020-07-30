@@ -61,11 +61,15 @@ https://www.youtube.com/watch?v=jFNHerJqvFw
 
 5. While in project directory, run the command "npm install"
 
-6. While in project directory, run "npm start"
+6. Create a .env file in the root directory, and at a property called ' REACT_APP_COD_API_KEY = "" '.
 
-7. Type in your browser the url "localhost:3000" to access the page, or the page should load upon running the previous command.
+7. You will need to obtain an api key from RapidApi's to view player data _https://rapidapi.com/elreco/api/call-of-duty-modern-warfare_. You may need to create an account to "test endpoint", and once that is accomplished, paste the key into the property of the .env file.
 
-8. To view data being requested from the api, open the browser console with CMD+SHIFT+J (CONTROL+SHIFT+I, for windows).
+8. While in project directory, run "npm start"
+
+9. Type in your browser the url "localhost:3000" to access the page, or the page should load upon running the previous command.
+
+10. To view data being requested from the api, open the browser console with CMD+SHIFT+J (CONTROL+SHIFT+I, for windows).
 
 ## Known Bugs
 * _When searching for users consisting of a '#' in their name, typcically associated to battle.net or Activision (uno) ID platoforms, a parsing error occurs. The application is only able to make search queries on console users at the moment._
